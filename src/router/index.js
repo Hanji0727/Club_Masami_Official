@@ -1,11 +1,13 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import About from '../pages/About.vue'
+import foods from '../components/menus/foods'
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: About
   },
   {
     path: '/about',
@@ -18,74 +20,88 @@ const routes = [
   {
     path: '/staff',
     name: 'staff',
-    component: import('../pages/Staff.vue'),
+    component: () => import(/* webpackChunkName: "about" */'../pages/Staff.vue'),
     children: [
       {
         path: '/hanji',
         name: 'hanji',
-        component: import('../components/talent/hanji.vue')
+        component: import('../components/talents/hanji.vue')
       },
       {
         path: '/meguru',
         name: 'meguru',
-        component: import('../components/talent/meguru.vue')
+        component: import('../components/talents/meguru.vue')
       },
       // {
       //   path: '/ren',
       //   name: 'ren',
-      //   component: import('../components/talent/ren.vue')
+      //   component: import('../components/talents/ren.vue')
       // },
       // {
       //   path: '/syunki',
       //   name: 'syunki',
-      //   component: import('../components/talent/syunki.vue')
+      //   component: import('../components/talents/syunki.vue')
       // },
       // {
       //   path: '/yoshiki',
       //   name: 'yoshiki',
-      //   component: import('../components/talent/yoshiki.vue')
+      //   component: import('../components/talents/yoshiki.vue')
       // },
       // {
       //   path: '/shinta',
       //   name: 'shinta',
-      //   component: import('../components/talent/shinta.vue')
+      //   component: import('../components/talents/shinta.vue')
       // },
       // {
       //   path: '/yuki',
       //   name: 'yuki',
-      //   component: import('../components/talent/yuki.vue')
+      //   component: import('../components/talents/yuki.vue')
       // },
       // {
       //   path: '/taichi',
       //   name: 'taichi',
-      //   component: import('../components/talent/taichi.vue')
+      //   component: import('../components/talents/taichi.vue')
       // },
       // {
       //   path: '/yanma',
       //   name: 'yanma',
-      //   component: import('../components/talent/yanma.vue')
+      //   component: import('../components/talents/yanma.vue')
       // },
       // {
       //   path: '/jyon',
       //   name: 'jyon',
-      //   component: import('../components/talent/jyon.vue')
+      //   component: import('../components/talents/jyon.vue')
       // },
       // {
       //   path: '/kaede',
       //   name: 'kaede',
-      //   component: import('../components/talent/kaede.vue')
+      //   component: import('../components/talents/kaede.vue')
       // },
       // {
       //   path: '/takeru',
       //   name: 'takeru',
-      //   component: import('../components/talent/takeru.vue')
+      //   component: import('../components/talents/takeru.vue')
       // },
     ]
   },
   {
     path: '/menu',
     name: 'menu',
-    component: () => import(/* webpackChunkName: "menu" */ '../pages/Menu.vue')
+    component: () => import(/* webpackChunkName: "about" */'../pages/Menu.vue'),
+    children: [
+      {
+        path: '/foods',
+        component: foods
+      },
+      {
+        path: '/drinks',
+        component: import('@/components/menus/drinks.vue')
+      },
+      {
+        path: '/others',
+        component: import('../components/menus/others.vue')
+      },
+    ]
   },
   {
     path: '/reserve',

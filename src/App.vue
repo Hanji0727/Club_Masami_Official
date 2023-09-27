@@ -2,7 +2,8 @@
   <v-app app>
     <v-main>
       <MyHeader />
-      <router-view/>
+      <router-view />
+      <myFooter />
     </v-main>
   </v-app>
 </template>
@@ -11,6 +12,7 @@
 // Components
 import HelloWorld from '@/components/HelloWorld.vue'
 import MyHeader from '@/components/MyHeader.vue'
+import MyFooter from '@/components/MyFooter.vue'
 
 export default {
   name: 'App',
@@ -18,6 +20,7 @@ export default {
   components: {
     HelloWorld,
     MyHeader,
+    MyFooter,
   },
 
   data: () => ({

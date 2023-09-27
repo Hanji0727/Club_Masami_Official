@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/about" class="link">Go to AboutView</router-link>
+  <router-view />
 </template>
 
 <script>

@@ -1,5 +1,8 @@
 <template>
-  <v-container style="height: 100vh; overflow: auto;" id="main">
+  <v-container
+    id="main"
+    style="height: 100vh; overflow: auto;" 
+  >
     <v-row class="text-center">
       <v-col cols="12">
         <v-img

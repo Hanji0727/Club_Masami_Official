@@ -1,9 +1,11 @@
 <template>
   <header>
-    <v-app-bar
-      prominent>
-      <v-app-bar-title class="title">Club Masami</v-app-bar-title>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-app-bar prominent>
+      <v-app-bar-title class="title">
+        Club Masami
+      </v-app-bar-title>
+
+      <v-app-bar-nav-icon @click="drawer = !drawer" />
     </v-app-bar>
 
     <v-navigation-drawer
@@ -14,15 +16,18 @@
     >
       <div style="width: 100vw;">
         <v-row
-          class="drawer-items"
           v-for="item in drawerItems"
           :key="item"
+          class="drawer-items"
         >
           <router-link
-            :to="'/' + item"
             class="link"
+            :to="'/' + item"
           >
-            <v-col cols="12" class="center">
+            <v-col
+              cols="12"
+              class="center"
+            >
               {{ item }}
             </v-col>
           </router-link>

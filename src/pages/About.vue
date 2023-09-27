@@ -5,34 +5,39 @@
         <v-row
           v-for="text in texts1"
           :key="text"
-          class="my-16">
-          <v-col cols="12" class="center">
+          class="my-16"
+        >
+          <v-col
+            cols="12"
+            class="center"
+          >
             {{ text }}
           </v-col>
         </v-row>
       </div>
     </transition>
   </div>
-  <v-spacer style="height: 100vh;"/>
+  <v-spacer style="height: 100vh;" />
 
-  <div class="trigger"></div>
   <div class="outer">
     <transition name="blur">
-        <div class="inner bottom">
+      <div class="inner bottom">
         <v-row
           v-for="text in texts2"
           :key="text"
-          class="my-16">
-          <v-col cols="12" class="center">
+          class="my-16"
+        >
+          <v-col
+            cols="12"
+            class="center"
+          >
             {{ text }}
           </v-col>
         </v-row>
       </div>
     </transition>
   </div>
-
   <v-spacer />
-
 </template>
 
 <script>

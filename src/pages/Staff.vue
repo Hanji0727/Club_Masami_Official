@@ -1,34 +1,39 @@
 <template>
   <div class="wrap">
     <v-row>
-      <v-col cols="12" class="center my-3">
+      <v-col
+        cols="12"
+        class="center my-3"
+      >
         <h2>ママたちのご紹介</h2>
       </v-col>
     </v-row>
     <div id="container">
-      <div class="content first"></div>
-      <div class="content second"></div>
-      <div class="content third"></div>
-      <div class="content fourth"></div>
-      <div class="content fifth"></div>
-      <router-view/>
+      <div class="content first" />
+      <div class="content second" />
+      <div class="content third" />
+      <div class="content fourth" />
+      <div class="content fifth" />
+      <router-view />
     </div>
     <v-row class="mt-4">
       <v-col
-        cols="6" 
-        md="4"
         v-for="staff in staffs"
         :key="staff"
         class="center pa-0"
+        cols="6" 
+        md="4"
       >
         <router-link
           :to="'/' + staff.name"
-          class="link">
+          class="link"
+        >
           <img
-              :src="staff.src"
-              width="427"
-              height="640"
-              class="img">
+            :src="staff.src"
+            width="427"
+            height="640"
+            class="img"
+          >
         </router-link>
       </v-col>
     </v-row>
