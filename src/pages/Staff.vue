@@ -48,7 +48,7 @@ export default {
         0: {
           name: 'hanji',
           // eslint-disable-next-line
-          src: require('@/img/talent/santa.jpg')
+          src: require('@/img/talent/hanji.jpg')
         },
         1: {
           name: 'meguru',
@@ -58,7 +58,7 @@ export default {
         2: {
           name: 'ren',
           // eslint-disable-next-line
-          src: require('@/img/talent/santa.jpg')
+          src: require('@/img/talent/ren2.jpg')
         },
         3: {
           name: 'syunki',

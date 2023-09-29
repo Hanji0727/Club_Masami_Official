@@ -9,13 +9,13 @@
     <v-col cols="1" />
     <v-col
       cols="3"
-      class="center"
+      class="center mt-2 pb-0"
     >
       源氏名
     </v-col>
     <v-col
       cols="4"
-      class="center"
+      class="center mt-2 pb-0"
     >
       {{ name }}
     </v-col>
@@ -24,13 +24,13 @@
     <v-col cols="1" />
     <v-col
       cols="3"
-      class="center"
+      class="center pb-0"
     >
       誕生日
     </v-col>
     <v-col
       cols="4"
-      class="center"
+      class="center pb-0"
     >
       {{ birthMonth + ' 月 ' + birthDay + ' 日' }}
     </v-col>
@@ -56,10 +56,11 @@
       cols="3"
       class="center"
     >
-      身長
+      コメント
     </v-col>
     <v-col
       cols="8"
+      class="comment"
       style="white-space: pre-line;"
     >
       {{ message }}
@@ -72,7 +73,7 @@ export default {
   data () {
     return {
       // eslint-disable-next-line
-      src: require('@/img/talent/ukiwa.jpg'),
+      src: require('@/img/talent/hanji.jpg'),
       name: 'はんじ',
       birthMonth: 7,
       birthDay: 27,
@@ -85,6 +86,9 @@ export default {
 </script>
 
 <style scoped>
+.comment {
+  font-size: medium !important;
+}
 .center {
   text-align: center;
 }

@@ -67,6 +67,10 @@ export default {
 </script>
 
 <style scoped>
+.mb-3 {
+  margin-bottom: 12px;
+  color: #865dff;
+}
 .img {
   width: 80%;
   height: 25%;

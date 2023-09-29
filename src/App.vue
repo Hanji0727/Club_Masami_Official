@@ -28,3 +28,11 @@ export default {
   }),
 }
 </script>
+<style>
+#app {
+  font-family: 'JK Rounded Gothic';
+  font-size: larger;
+  background-color: #35477d !important;
+  color: #865dff;
+}
+</style>

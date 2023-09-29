@@ -32,11 +32,11 @@ const routes = [
         name: 'meguru',
         component: import('../components/talents/meguru.vue')
       },
-      // {
-      //   path: '/ren',
-      //   name: 'ren',
-      //   component: import('../components/talents/ren.vue')
-      // },
+      {
+        path: '/ren',
+        name: 'ren',
+        component: import('../components/talents/ren.vue')
+      },
       // {
       //   path: '/syunki',
       //   name: 'syunki',

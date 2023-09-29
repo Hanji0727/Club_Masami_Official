@@ -2,7 +2,7 @@
   <header>
     <v-app-bar prominent>
       <v-app-bar-title class="title">
-        Club Masami
+        倶楽部 麻沙美
       </v-app-bar-title>
 
       <v-app-bar-nav-icon @click="drawer = !drawer" />

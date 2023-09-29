@@ -124,7 +124,8 @@ a:visited {
   border-bottom: solid 1px rgba(0, 0, 0, 0.2);
 }
 .active {
-  border-bottom: solid 1px rgba(0, 0, 0, 1);
+  border-bottom: solid 1px #845dff;
+  color: #865dff;
 }
 .text-box {
   width: 80vw;

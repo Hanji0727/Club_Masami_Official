@@ -9,7 +9,7 @@
         >
           <v-col
             cols="12"
-            class="center"
+            class="center text"
           >
             {{ text }}
           </v-col>
@@ -29,7 +29,7 @@
         >
           <v-col
             cols="12"
-            class="center"
+            class="center text"
           >
             {{ text }}
           </v-col>
@@ -102,6 +102,9 @@ export default {
 </script>
 
 <style scoped>
+.text {
+  font-size: x-large;
+}
 .outer {
   height: 100vh;
   position: relative;
@@ -110,10 +113,11 @@ export default {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 80%;
 }
 .top {
-  transform: translateY(-65%) translateX(-50%);
-  -webkit-transform: translateY(-65%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
   opacity: 0;
   filter: blur(15px);
 }
