@@ -23,17 +23,20 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */'../pages/Staff.vue'),
     children: [
       {
+        path: '',
+      },
+      {
         path: 'hanji',
         name: 'hanji',
         component: import('../components/talents/hanji.vue')
       },
       {
-        path: '/meguru',
+        path: 'meguru',
         name: 'meguru',
         component: import('../components/talents/meguru.vue')
       },
       {
-        path: '/ren',
+        path: 'ren',
         name: 'ren',
         component: import('../components/talents/ren.vue')
       },
