@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkrouter_project"]=self["webpackChunkrouter_project"]||[]).push([[284],{802:function(e,r,t){t.r(r),t.d(r,{default:function(){return l}});var n=t(3396);function u(e,r,t,u,o,a){return(0,n.wg)(),(0,n.iD)("h1",null," Reserve Page ")}var o=t(7509),a={data(){return{}},mounted(){const e=(0,o.N8)(),r=(0,o.iH)(e,"table");(0,o.U2)(r).then((e=>{e.exists()&&console.log(e.val())}))}},c=t(89);const s=(0,c.Z)(a,[["render",u]]);var l=s}}]);
+//# sourceMappingURL=reserve.87572f8a.js.map
