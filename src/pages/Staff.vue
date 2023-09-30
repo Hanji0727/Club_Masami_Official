@@ -25,7 +25,7 @@
         md="4"
       >
         <router-link
-          :to="'/' + staff.name"
+          :to="'/staff/' + staff.name"
           class="link"
         >
           <img
