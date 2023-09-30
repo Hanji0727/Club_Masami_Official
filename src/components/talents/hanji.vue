@@ -74,11 +74,14 @@ export default {
     return {
       // eslint-disable-next-line
       src: require('@/img/talent/hanji.jpg'),
-      name: 'はんじ',
+      name: 'はーちゃん',
       birthMonth: 7,
       birthDay: 27,
       height: 182,
-      message: `会えるのを楽しみにしてるわ♡
+      message: `み～～んなのお姉ちゃん
+                はーちゃんですっ//
+
+                会えるのを楽しみにしてるね♡
                 来ないならこっちから行くわよ♡`
     }
   },

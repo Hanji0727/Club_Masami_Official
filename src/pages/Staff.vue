@@ -189,7 +189,7 @@ export default {
 }
 .box { /* container に付与する */
   position: relative;
-  height: 85vh;
+  height: auto;
   overflow: hidden;
 }
 .show {
@@ -209,7 +209,6 @@ export default {
 }
 .forAnimation { /* content に付与する */
   position: absolute;
-  background-color: white;
   width: 100vw;
   height: 20%;
   left: -100%;
@@ -274,17 +273,23 @@ export default {
     transform: translateX(200%);
   }
 }
-
+.first {
+  background-color: #e284ff;
+}
 .second {
   top: 20%;
+  background-color: #d284ff;
 }
 .third {
   top: 40%;
+  background-color: #c284ff;
 }
 .fourth {
   top: 60%;
+  background-color: #b284ff;
 }
 .fifth {
   top: 80%;
+  background-color: #a284ff;
 }
 </style>

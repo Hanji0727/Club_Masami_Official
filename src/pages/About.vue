@@ -1,4 +1,15 @@
 <template>
+  <div class="videoBox">
+    <video
+      class="video"
+      :src="videoSrc"
+      autoplay
+      muted
+      loop
+      playsinline>
+    </video>
+  </div>
+  <v-spacer style="height: 70vh;" />
   <div class="outer">
     <transition name="blur">
       <div class="inner top">
@@ -56,7 +67,9 @@ export default {
         3: '楽しみ方はお客様次第',
         4: 'ご来店お待ちしてます'
       },
-      el: null
+      el: null,
+      // eslint-disable-next-line
+      videoSrc: require('@/img/movies/atomLegal.mp4')
     }
   },
   created () {
@@ -71,17 +84,21 @@ export default {
   },
   mounted () {
     const el = document.querySelector('.top')
-    el.classList.add('blur')
+    // el.classList.add('blur')
   },
   methods: {
     handleScroll() {
       const el = document.querySelector(".top")
+      const videoBox = document.querySelector('.videoBox')
       const elTop = el.getBoundingClientRect().top
       const windowHeight = window.innerHeight
-      const yOffset = 600
+      const yOffset = -100
       console.log(elTop - windowHeight + yOffset)
-      if (elTop - windowHeight + yOffset >= -500) {
+      if ((-1300 <= elTop - windowHeight + yOffset) && (elTop - windowHeight + yOffset <= -200)) {
         el.classList.add('blur')
+        videoBox.classList.add('hide')
+      } else if (elTop - windowHeight + yOffset >= -200) {
+        videoBox.classList.remove('hide')
       } else {
         el.classList.remove('blur')
       }
@@ -91,7 +108,8 @@ export default {
       const elTop = el.getBoundingClientRect().top
       const windowHeight = window.innerHeight
       const yOffset = 100
-      if (elTop - windowHeight + yOffset <= -200) {
+      // console.log(elTop - windowHeight + yOffset)
+      if (elTop - windowHeight + yOffset <= 0) {
         el.classList.add('blur')
       } else {
         el.classList.remove('blur')
@@ -102,6 +120,34 @@ export default {
 </script>
 
 <style scoped>
+.videoBox {
+  height: 50vh;
+  width: 90vw;
+  margin: auto;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.hide {
+  animation: hide 1s ease 0s normal forwards;
+} 
+@keyframes hide {
+  from {
+    opacity: 1;
+    filter: blur(0px) brightness(100%);
+  }
+  to {
+    opacity: 0.3;
+    filter: blur(10px) brightness(50%);
+  }
+}
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .text {
   font-size: x-large;
 }
