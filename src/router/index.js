@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import About from '../pages/About.vue'
 import foods from '../components/menus/foods'
+import Hanji from '../components/talents/hanji.vue'
 
 const routes = [
   {
@@ -23,12 +24,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */'../pages/Staff.vue'),
     children: [
       {
-        path: '',
-      },
-      {
         path: 'hanji',
         name: 'hanji',
-        component: import('../components/talents/hanji.vue')
+        component: Hanji
       },
       {
         path: 'meguru',
