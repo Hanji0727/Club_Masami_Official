@@ -1,8 +1,17 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import About from '../pages/About.vue'
-import foods from '../components/menus/foods'
+
+// 各メニューのインポート
+import Foods from '../components/menus/foods.vue'
+import Drinks from '../components/menus/drinks.vue'
+import Others from '../components/menus/others.vue'
+
+// 個人のページのインポート
 import Hanji from '../components/talents/hanji.vue'
+import Meguru from '../components/talents/meguru.vue'
+import Ren from '../components/talents/ren.vue'
+
 
 const routes = [
   {
@@ -31,12 +40,12 @@ const routes = [
       {
         path: 'meguru',
         name: 'meguru',
-        component: import('../components/talents/meguru.vue')
+        component: Meguru
       },
       {
         path: 'ren',
         name: 'ren',
-        component: import('../components/talents/ren.vue')
+        component: Ren
       },
       // {
       //   path: '/syunki',
@@ -92,15 +101,15 @@ const routes = [
     children: [
       {
         path: '/foods',
-        component: foods
+        component: Foods
       },
       {
         path: '/drinks',
-        component: import('@/components/menus/drinks.vue')
+        component: Drinks
       },
       {
         path: '/others',
-        component: import('../components/menus/others.vue')
+        component: Others
       },
     ]
   },
