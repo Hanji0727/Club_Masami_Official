@@ -46,22 +46,22 @@ export default {
     return {
       staffs: {
         0: {
-          name: 'hanji',
+          name: 'hatyan',
           // eslint-disable-next-line
           src: require('@/img/talent/hanji.jpg')
         },
         1: {
           name: 'meguru',
           // eslint-disable-next-line
-          src: require('@/img/talent/santa.jpg')
+          src: require('@/img/talent/meguru.jpg')
         },
         2: {
-          name: 'ren',
+          name: 'nasukama',
           // eslint-disable-next-line
           src: require('@/img/talent/ren2.jpg')
         },
         3: {
-          name: 'syunki',
+          name: 'haruharu',
           // eslint-disable-next-line
           src: require('@/img/talent/santa.jpg')
 
@@ -73,21 +73,19 @@ export default {
 
         },
         5: {
-          name: 'shinta',
+          name: 'shinshin',
           // eslint-disable-next-line
-          src: require('@/img/talent/santa.jpg')
-
+          src: require('@/img/talent/ukiwa.jpg')
         },
         6: {
-          name: 'yuki',
+          name: 'yui',
           // eslint-disable-next-line
-          src: require('@/img/talent/santa.jpg')
-
+          src: require('@/img/talent/yuki2.jpg')
         },
         7: {
-          name: 'taichi',
+          name: 'mamadona',
           // eslint-disable-next-line
-          src: require('@/img/talent/santa.jpg')
+          src: require('@/img/talent/taichi2.jpg')
         },
         8: {
           name: 'yanma',
@@ -95,9 +93,9 @@ export default {
           src: require('@/img/talent/santa.jpg')
         },
         9: {
-          name: 'jyon',
+          name: 'shion',
           // eslint-disable-next-line
-          src: require('@/img/talent/santa.jpg')
+          src: require('@/img/talent/jion.jpg')
         },
         10: {
           name: 'kaede',

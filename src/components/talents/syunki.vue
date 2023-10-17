@@ -9,13 +9,13 @@
     <v-col cols="1" />
     <v-col
       cols="3"
-      class="center"
+      class="center mt-2 pb-0"
     >
       源氏名
     </v-col>
     <v-col
       cols="4"
-      class="center"
+      class="center mt-2 pb-0"
     >
       {{ name }}
     </v-col>
@@ -24,13 +24,13 @@
     <v-col cols="1" />
     <v-col
       cols="3"
-      class="center"
+      class="center pb-0"
     >
       誕生日
     </v-col>
     <v-col
       cols="4"
-      class="center"
+      class="center pb-0"
     >
       {{ birthMonth + ' 月 ' + birthDay + ' 日' }}
     </v-col>
@@ -73,13 +73,20 @@ export default {
   data () {
     return {
       // eslint-disable-next-line
-      src: require('@/img//talent/meguru2.jpg'),
-      name: 'めぐる',
-      birthMonth: 6,
-      birthDay: 25,
-      height: '???',
-      message: `会えるのを楽しみにしてるわ♡
-                来ないならこっちから行くわよ♡`
+      src: require('@/img/talent/hanji.jpg'),
+      name: 'はるはる',
+      birthMonth: 2,
+      birthDay: 18,
+      height: 172,
+      message: `はるはるよ❤️好きなタイプは
+                前腕がフ・ト・い人❤️❤️
+
+                アタシこう見えてバイクの運転
+                できるのよ😘
+
+                あら、後ろに乗せてって？
+                もう、しょうがないわね～
+                アクセル全開で行くわよ💕`
     }
   },
 }
@@ -101,5 +108,4 @@ export default {
   width: 103vw;
   height: 60vh;
 }
-
 </style>

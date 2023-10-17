@@ -2,6 +2,10 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import About from '../pages/About.vue'
 
+// 予約・確認関連のインポート
+import reserveComponent from '../components/reserveComponent'
+import confirmComponent from '../components/confirmComponent'
+
 // 各メニューのインポート
 import Foods from '../components/menus/foods.vue'
 import Drinks from '../components/menus/drinks.vue'
@@ -11,6 +15,11 @@ import Others from '../components/menus/others.vue'
 import Hanji from '../components/talents/hanji.vue'
 import Meguru from '../components/talents/meguru.vue'
 import Ren from '../components/talents/ren.vue'
+import Taichi from '../components/talents/taichi.vue'
+import Syunki from '../components/talents/syunki.vue'
+import Jion from '../components/talents/jion.vue'
+import Yuki from '../components/talents/yuki.vue'
+import Shinta from '../components/talents/shinta.vue'
 
 
 const routes = [
@@ -33,8 +42,8 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */'../pages/Staff.vue'),
     children: [
       {
-        path: 'hanji',
-        name: 'hanji',
+        path: 'hatyan',
+        name: 'hatyan',
         component: Hanji
       },
       {
@@ -43,45 +52,45 @@ const routes = [
         component: Meguru
       },
       {
-        path: 'ren',
-        name: 'ren',
+        path: 'nasukama',
+        name: 'nasukama',
         component: Ren
       },
-      // {
-      //   path: '/syunki',
-      //   name: 'syunki',
-      //   component: import('../components/talents/syunki.vue')
-      // },
+      {
+        path: 'haruharu',
+        name: 'haruharu',
+        component: Syunki
+      },
       // {
       //   path: '/yoshiki',
       //   name: 'yoshiki',
       //   component: import('../components/talents/yoshiki.vue')
       // },
-      // {
-      //   path: '/shinta',
-      //   name: 'shinta',
-      //   component: import('../components/talents/shinta.vue')
-      // },
-      // {
-      //   path: '/yuki',
-      //   name: 'yuki',
-      //   component: import('../components/talents/yuki.vue')
-      // },
-      // {
-      //   path: '/taichi',
-      //   name: 'taichi',
-      //   component: import('../components/talents/taichi.vue')
-      // },
+      {
+        path: 'shinshin',
+        name: 'shinshin',
+        component: Shinta
+      },
+      {
+        path: 'yui',
+        name: 'yui',
+        component: Yuki
+      },
+      {
+        path: 'mamadona',
+        name: 'mamadona',
+        component: Taichi
+      },
       // {
       //   path: '/yanma',
       //   name: 'yanma',
       //   component: import('../components/talents/yanma.vue')
       // },
-      // {
-      //   path: '/jyon',
-      //   name: 'jyon',
-      //   component: import('../components/talents/jyon.vue')
-      // },
+      {
+        path: 'shion',
+        name: 'shion',
+        component: Jion
+      },
       // {
       //   path: '/kaede',
       //   name: 'kaede',
@@ -112,11 +121,6 @@ const routes = [
         component: Others
       },
     ]
-  },
-  {
-    path: '/reserve',
-    name: 'reserve',
-    component: () => import(/* webpackChunkName: "reserve" */ '../pages/Reserve.vue')
   },
   {
     path: '/access',
