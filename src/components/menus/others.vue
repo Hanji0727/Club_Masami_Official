@@ -43,19 +43,26 @@ export default {
           detail: '記念写真にどうぞ'
         },
         2: {
-          name: 'セット1',
+          name: '満足セット',
           // eslint-disable-next-line
-          src: require('@/img/foods/rawchocolate.png'),
+          src: require('@/img/others/set.png'),
           price: '500円',
-          detail: 'スイーツとドリンクのセット'
+          detail: '食べ物とドリンクのセット'
         },
         3: {
-          name: 'セット2',
+          name: 'チェキセット',
           // eslint-disable-next-line
-          src: require('@/img/foods/pancake.png'),
+          src: require('@/img/others/set2.png'),
           price: '500円',
           detail: `スイーツorドリンクと
                    チェキ撮影のセット`
+        },
+        4: {
+          name: 'チェキ×2枚セット',
+          // eslint-disable-next-line
+          src: require('@/img/others/tyeki.png'),
+          price: '500円',
+          detail: 'チェキが2枚撮れます!'
         }
       }
     }

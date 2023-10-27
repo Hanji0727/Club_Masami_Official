@@ -75,14 +75,21 @@ export default {
       // eslint-disable-next-line
       src: require('@/img/talent/taichi.jpg'),
       name: 'ディエゴ・ママドーナ',
-      birthMonth: 7,
-      birthDay: 27,
-      height: 182,
-      message: `み～～んなのお姉ちゃん
-                はーちゃんですっ//
+      birthMonth: 4,
+      birthDay: 23,
+      height: 163,
+      message: `初めまして💕
+                ドリブラー系⚽一関女子
+                神の手🤚ディエゴ・ママドーナよ
 
-                会えるのを楽しみにしてるね♡
-                来ないならこっちから行くわよ♡`
+                出勤前はいつも緊張して💦
+                手が震えちゃうんだけど
+                リフティングしてリラックスしてるの⚽
+                
+                みんなの心にハットトリックしちゃうわよ💘
+                クラブチームで待ってるワ💓
+                
+                💏te amo💏`
     }
   },
 }

@@ -46,26 +46,26 @@ export default {
       items: {
         1: {
           // eslint-disable-next-line
-          src: require('@/img/others/bg1.jpg'),
+          src: require('@/img/access/bg1.jpg'),
           title: '営業日',
           text: '10/28(土)、29(日)'
         },
         2: {
           // eslint-disable-next-line
-          src: require('@/img/others/bg1.jpg'),
+          src: require('@/img/access/bg1.jpg'),
           title: '時間',
           text: '9:00 ~ 17:00'
         },
         3: {
           // eslint-disable-next-line
-          src: require('@/img/others/bg1.jpg'),
+          src: require('@/img/access/bg1.jpg'),
           title: '場所',
           text: `一関高専 本科教育棟
                  3階 4C教室`
         },
         4: {
           // eslint-disable-next-line
-          src: require('@/img/others/bg1.jpg'),
+          src: require('@/img/access/bg1.jpg'),
           title: 'その他',
           text: `休憩や受付などママが
                  お休みの時間もあります
@@ -131,7 +131,7 @@ export default {
 }
 .content {
   width: 85vw;
-  height: 50vh;
+  height: 51vh;
   margin: auto;
   opacity: 0;
 }

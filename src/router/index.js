@@ -2,10 +2,6 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import About from '../pages/About.vue'
 
-// 予約・確認関連のインポート
-import reserveComponent from '../components/reserveComponent'
-import confirmComponent from '../components/confirmComponent'
-
 // 各メニューのインポート
 import Foods from '../components/menus/foods.vue'
 import Drinks from '../components/menus/drinks.vue'
@@ -20,6 +16,10 @@ import Syunki from '../components/talents/syunki.vue'
 import Jion from '../components/talents/jion.vue'
 import Yuki from '../components/talents/yuki.vue'
 import Shinta from '../components/talents/shinta.vue'
+import Aotyan from '../components/talents/aoshi.vue'
+import Kaetyan from '../components/talents/kaede.vue'
+import Reiko from '../components/talents/reiwa.vue'
+
 
 
 const routes = [
@@ -61,11 +61,6 @@ const routes = [
         name: 'haruharu',
         component: Syunki
       },
-      // {
-      //   path: '/yoshiki',
-      //   name: 'yoshiki',
-      //   component: import('../components/talents/yoshiki.vue')
-      // },
       {
         path: 'shinshin',
         name: 'shinshin',
@@ -81,26 +76,26 @@ const routes = [
         name: 'mamadona',
         component: Taichi
       },
-      // {
-      //   path: '/yanma',
-      //   name: 'yanma',
-      //   component: import('../components/talents/yanma.vue')
-      // },
+      {
+        path: 'reiko',
+        name: 'reiko',
+        component: Reiko
+      },
       {
         path: 'shion',
         name: 'shion',
         component: Jion
       },
-      // {
-      //   path: '/kaede',
-      //   name: 'kaede',
-      //   component: import('../components/talents/kaede.vue')
-      // },
-      // {
-      //   path: '/takeru',
-      //   name: 'takeru',
-      //   component: import('../components/talents/takeru.vue')
-      // },
+      {
+        path: 'kaetyan',
+        name: 'kaetyan',
+        component: Kaetyan
+      },
+      {
+        path: 'aotyan',
+        name: 'aotyan',
+        component: Aotyan
+      },
     ]
   },
   {
@@ -108,6 +103,11 @@ const routes = [
     name: 'menu',
     component: () => import(/* webpackChunkName: "about" */'../pages/Menu.vue'),
     children: [
+      {
+        path: '',
+        name: '',
+        component: Foods
+      },
       {
         path: '/foods',
         component: Foods
@@ -130,6 +130,11 @@ const routes = [
 ]
 
 const router = createRouter({
+  scrollBehavior(to, from, savedPosition) {
+    return {
+      top: 0
+    }
+  },
   history: createWebHashHistory(),
   routes
 })

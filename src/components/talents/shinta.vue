@@ -73,7 +73,7 @@ export default {
   data () {
     return {
       // eslint-disable-next-line
-      src: require('@/img/talent/yuki.jpg'),
+      src: require('@/img/talent/shinta.jpg'),
       name: '伸伸',
       birthMonth: 6,
       birthDay: 5,

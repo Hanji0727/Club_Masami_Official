@@ -73,19 +73,19 @@ export default {
   data () {
     return {
       // eslint-disable-next-line
-      src: require('@/img/talent/hanji.jpg'),
-      name: 'はーちゃん',
-      birthMonth: 7,
-      birthDay: 27,
-      height: 182,
-      message: `み～～んなのお姉ちゃん
-                はーちゃんですっ//
+      src: require('@/img/talent/kaede.jpg'),
+      name: 'かえちゃん',
+      birthMonth: 2,
+      birthDay: 18,
+      height: 176,
+      message: `やっほ～
+                倶楽部麻沙美で働くことになった
+                かえちゃんです💓💓💓
 
-                みんなの悩みも、愛情も
-                私の大きなカラダで
-                ぜ～んぶ包み込んであげる👄
-                会えるのを楽しみにしてるわ💓
-                来ないならこっちから行くわよ`
+                高専祭楽しみね💞💕
+                みんな大好きです💖
+                一生大切にするね🥹
+                メイド服でお待ちしてます🌟`
     }
   },
 }

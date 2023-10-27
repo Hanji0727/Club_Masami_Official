@@ -42,7 +42,7 @@ export default {
   data () {
     return {
       drawer: false,
-      drawerItems: ['about', 'staff', 'menu', 'reserve', 'access']
+      drawerItems: ['about', 'staff', 'menu', 'access']
     }
   },
   methods: {

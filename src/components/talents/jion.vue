@@ -74,15 +74,21 @@ export default {
     return {
       // eslint-disable-next-line
       src: require('@/img/talent/jion.jpg'),
-      name: 'はーちゃん',
-      birthMonth: 7,
-      birthDay: 27,
-      height: 182,
-      message: `み～～んなのお姉ちゃん
-                はーちゃんですっ//
+      name: 'しおん',
+      birthMonth: 12,
+      birthDay: 3,
+      height: 184,
+      message: `久しぶり～♥️
+                学校一のマドンナ👱‍♀️しおんだよ🫰
 
-                会えるのを楽しみにしてるね♡
-                来ないならこっちから行くわよ♡`
+                ちょっと男子～ちゃんと掃除して🧹
+                こんなに散らかしちゃって、もう❗
+                私が手伝ってあげるから
+                終わったらお茶にしましょ🍵
+                
+                みんなと触れ合えるの
+                楽しみにしてるわ🥰
+                あなた達がケダモノよ🐗`
     }
   },
 }

@@ -28,7 +28,10 @@
       </div>
     </transition>
   </div>
-  <v-spacer style="height: 100vh;" />
+
+  <div class="imagebox">
+    <img :src="src" class="img">
+  </div>
 
   <div class="outer">
     <transition name="blur">
@@ -69,7 +72,9 @@ export default {
       },
       el: null,
       // eslint-disable-next-line
-      videoSrc: require('@/img/movies/atomLegal.mp4')
+      videoSrc: require('@/img/movies/atomLegal.mp4'),
+      // eslint-disable-next-line
+      src: require('@/img/others/poster.jpg')
     }
   },
   created () {
@@ -120,6 +125,16 @@ export default {
 </script>
 
 <style scoped>
+.imagebox {
+  width: 100vw;
+  height: 100vh;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .videoBox {
   height: 50vh;
   width: 90vw;

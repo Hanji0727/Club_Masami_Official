@@ -73,19 +73,22 @@ export default {
   data () {
     return {
       // eslint-disable-next-line
-      src: require('@/img/talent/hanji.jpg'),
-      name: 'はーちゃん',
-      birthMonth: 7,
-      birthDay: 27,
-      height: 182,
-      message: `み～～んなのお姉ちゃん
-                はーちゃんですっ//
+      src: require('@/img/talent/reiwa.jpg'),
+      name: 'REIKO',
+      birthMonth: 1,
+      birthDay: 18,
+      height: 169,
+      message: `はじめまして❤️
+                スイカゲームドハマり系女子
+                REIKOです💕💕💕
 
-                みんなの悩みも、愛情も
-                私の大きなカラダで
-                ぜ～んぶ包み込んであげる👄
-                会えるのを楽しみにしてるわ💓
-                来ないならこっちから行くわよ`
+                すっごく緊張してるけど、私の
+                セクシーREIKOショット🏹💘で
+                あなたのココロ、射止めちゃうわ
+                
+                当日会えるの楽しみにしてるわ
+                ぜひ遊びに来てね👨‍👩‍👧‍👦
+                来ないとスイカ投げちゃうぞっ🍉`
     }
   },
 }

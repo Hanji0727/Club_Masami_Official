@@ -43,19 +43,12 @@ export default {
           detail: 'なめらかぷるぷる'
         },
         2: {
-          name: '生チョコケーキ',
+          name: 'お菓子',
           // eslint-disable-next-line
-          src: require('@/img/foods/rawchocolate.png'),
+          src: require('@/img/foods/okashi.png'),
           price: '300円',
-          detail: 'しっとり濃厚'
+          detail: '定番のお菓子'
         },
-        3: {
-          name: 'スフレパンケーキ',
-          // eslint-disable-next-line
-          src: require('@/img/foods/pancake.png'),
-          price: '300円',
-          detail: 'ふかふかふわふわ'
-        }
       }
     }
   },

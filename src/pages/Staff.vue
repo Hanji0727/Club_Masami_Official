@@ -63,49 +63,43 @@ export default {
         3: {
           name: 'haruharu',
           // eslint-disable-next-line
-          src: require('@/img/talent/santa.jpg')
+          src: require('@/img/talent/syunki.jpg')
 
         },
         4: {
-          name: 'yoshiki',
-          // eslint-disable-next-line
-          src: require('@/img/talent/santa.jpg')
-
-        },
-        5: {
           name: 'shinshin',
           // eslint-disable-next-line
-          src: require('@/img/talent/ukiwa.jpg')
+          src: require('@/img/talent/shinta.jpg')
         },
-        6: {
+        5: {
           name: 'yui',
           // eslint-disable-next-line
           src: require('@/img/talent/yuki2.jpg')
         },
-        7: {
+        6: {
           name: 'mamadona',
           // eslint-disable-next-line
           src: require('@/img/talent/taichi2.jpg')
         },
-        8: {
-          name: 'yanma',
+        7: {
+          name: 'reiko',
           // eslint-disable-next-line
-          src: require('@/img/talent/santa.jpg')
+          src: require('@/img/talent/reiwa.jpg')
         },
-        9: {
+        8: {
           name: 'shion',
           // eslint-disable-next-line
           src: require('@/img/talent/jion.jpg')
         },
-        10: {
-          name: 'kaede',
+        9: {
+          name: 'kaetyan',
           // eslint-disable-next-line
-          src: require('@/img/talent/santa.jpg')
+          src: require('@/img/talent/kaede.jpg')
         },
-        11: {
-          name: 'takeru',
+        10: {
+          name: 'aotyan',
           // eslint-disable-next-line
-          src: require('@/img/talent/santa.jpg')
+          src: require('@/img/talent/aoshi.jpg')
         }
       },
       show: false

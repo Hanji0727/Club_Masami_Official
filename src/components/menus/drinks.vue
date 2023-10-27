@@ -38,7 +38,7 @@ export default {
         1: {
           name: 'アスターレモネード',
           // eslint-disable-next-line
-          src: require('@/img/drinks/coctail.jpg'),
+          src: require('@/img/drinks/drink1.png'),
           price: '300円',
           detail: `レモン・ライム・ソーダ・
                    グレナデンシロップ`
@@ -46,7 +46,7 @@ export default {
         2: {
           name: 'オレンジ・エード',
           // eslint-disable-next-line
-          src: require('@/img/drinks/coctail2.jpg'),
+          src: require('@/img/drinks/drink2.png'),
           price: '300円',
           detail: `オレンジ、シュガーシロップ
                    ミネラルウォーター`
@@ -54,7 +54,7 @@ export default {
         3: {
           name: 'シャーリーテンプル',
           // eslint-disable-next-line
-          src: require('@/img/drinks/coctail.jpg'),
+          src: require('@/img/drinks/drink3.png'),
           price: '300円',
           detail: `レモン・グレナデン
                    ジンジャーエール`
@@ -62,7 +62,7 @@ export default {
         4: {
           name: 'シャーリーテンプル・ブラック',
           // eslint-disable-next-line
-          src: require('@/img/drinks/coctail2.jpg'),
+          src: require('@/img/drinks/drink4.png'),
           price: '300円',
           detail: `レモン・コーラ
                    グレナデン`
@@ -70,17 +70,9 @@ export default {
         5: {
           name: 'シンデレラ',
           // eslint-disable-next-line
-          src: require('@/img/drinks/coctail.jpg'),
+          src: require('@/img/drinks/drink5.png'),
           price: '300円',
           detail: 'オレンジ・レモン・パイン'
-        },
-        6: {
-          name: 'シャーリーテンプル',
-          // eslint-disable-next-line
-          src: require('@/img/drinks/coctail2.jpg'),
-          price: '300円',
-          detail: `グレープフルーツ
-                   クランベリー`
         }
       }
     }
