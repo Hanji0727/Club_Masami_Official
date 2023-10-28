@@ -52,7 +52,7 @@ export default {
         },
         2: {
           // eslint-disable-next-line
-          src: require('@/img/access/bg1.jpg'),
+          src: require('@/img/access/bg2.jpg'),
           title: '時間',
           text: '9:00 ~ 17:00'
         },
@@ -68,8 +68,7 @@ export default {
           src: require('@/img/access/bg1.jpg'),
           title: 'その他',
           text: `休憩や受付などママが
-                 お休みの時間もあります
-
+                 お休みの時間もあります。
                  ママの写真を撮る時は
                  一声お願いします`
         },

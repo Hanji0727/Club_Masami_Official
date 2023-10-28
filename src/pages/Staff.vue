@@ -34,6 +34,16 @@
             height="640"
             class="img"
           >
+          <v-row>
+            <v-col cols="8">
+              {{ staff.a }}
+            </v-col>
+            <v-col cols="2">
+              <v-icon>
+                mdi-gesture-tap
+              </v-icon>
+            </v-col>
+          </v-row>
         </router-link>
       </v-col>
     </v-row>
@@ -48,58 +58,69 @@ export default {
         0: {
           name: 'hatyan',
           // eslint-disable-next-line
-          src: require('@/img/talent/hanji.jpg')
+          src: require('@/img/talent/hanji.jpg'),
+          a: 'はーちゃん'
         },
         1: {
           name: 'meguru',
           // eslint-disable-next-line
-          src: require('@/img/talent/meguru.jpg')
+          src: require('@/img/talent/meguru.jpg'),
+          a: 'めぐぐ'
         },
         2: {
           name: 'nasukama',
           // eslint-disable-next-line
-          src: require('@/img/talent/ren2.jpg')
+          src: require('@/img/talent/ren2.jpg'),
+          a: '那須カマ'
         },
         3: {
           name: 'haruharu',
           // eslint-disable-next-line
-          src: require('@/img/talent/syunki.jpg')
+          src: require('@/img/talent/syunki.jpg'),
+          a: 'はるはる'
 
         },
         4: {
           name: 'shinshin',
           // eslint-disable-next-line
-          src: require('@/img/talent/shinta.jpg')
+          src: require('@/img/talent/shinta.jpg'),
+          a: '伸伸'
         },
         5: {
           name: 'yui',
           // eslint-disable-next-line
-          src: require('@/img/talent/yuki2.jpg')
+          src: require('@/img/talent/yuki2.jpg'),
+          a: 'ゆい'
         },
         6: {
           name: 'mamadona',
           // eslint-disable-next-line
-          src: require('@/img/talent/taichi2.jpg')
+          src: require('@/img/talent/taichi2.jpg'),
+          a: 'ママドーナ'
         },
         7: {
           name: 'reiko',
           // eslint-disable-next-line
-          src: require('@/img/talent/reiwa.jpg')
+          src: require('@/img/talent/reiwa.jpg'),
+          a: 'REIKO'
         },
         8: {
           name: 'shion',
           // eslint-disable-next-line
-          src: require('@/img/talent/jion.jpg')
+          src: require('@/img/talent/jion.jpg'),
+          a: 'しおん'
         },
         9: {
           name: 'kaetyan',
           // eslint-disable-next-line
-          src: require('@/img/talent/kaede.jpg')
+          src: require('@/img/talent/kaede.jpg'),
+          a: 'かえちゃん'
         },
         10: {
           name: 'aotyan',
           // eslint-disable-next-line
-          src: require('@/img/talent/aoshi.jpg')
+          src: require('@/img/talent/aoshi.jpg'),
+          a: 'あおちゃん'
         }
       },
       show: false

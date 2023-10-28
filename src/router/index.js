@@ -126,6 +126,11 @@ const routes = [
     path: '/access',
     name: 'access',
     component: () => import(/* webpackChunkName: "stuff" */ '../pages/Access.vue')
+  },
+  {
+    path: '/pay',
+    name: 'pay',
+    component: () => import(/* webpackChunkName: "stuff" */ '../pages/Access.vue')
   }
 ]
 
